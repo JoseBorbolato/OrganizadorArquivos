@@ -59,6 +59,6 @@ tipos = {
     'IMAGENS': ['.gif', '.png', '.jpg', '.bmp'],
     'MUSICAS': ['.mp3']
 }
-for x, y in tipos.items():
-    if '.gif' in y:
-        print(' tem imagem')
+
+variavel = {x: y for x, y in tipos.items() if '.mp3' in y}
+print(list(variavel.keys())[0])
